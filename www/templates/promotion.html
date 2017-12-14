@@ -1,0 +1,50 @@
+<ion-view view-title="My Promotions" hide-back-button="true">
+  <ion-content class="has-header has-tabs">
+     <div ng-repeat="promo in promobills track by $index">
+      <div class="row"  ng-if="$even" style="height:255px;margin-top: 3%;padding:0px !important">
+        <div class=" col-50 promotion_bckgrd"  ng-style="{'background-image':'url({{promobills[$index].offer_image}})'}" ng-click="promotionmodal(promobills[$index])">
+          
+        </div>
+      
+        <div class="col-50 promotion_bckgrd" style="background-image: url({{promobills[$index+1].offer_image}});" ng-click="promotionmodal(promobills[$index+1])">
+         
+        </div>
+        
+      </div>
+     </div>
+     <!-- <div class="row" style="height:200px;margin-top: 3%;">
+        <div class="col  mu" style="margin-right: 3%;">
+            
+        </div>
+        <div class="col  mu">
+           
+        </div>
+       
+     </div> -->
+    
+    
+
+  </ion-content>
+   <div class="tabs tabs-icon-top" style="background-color:white;box-shadow: 0 -5px 5px -5px #797979;border-top:1px solid #797979;background-image:none !important;opacity:1.1">
+  
+       <a class="tab-item {{w1icontext()}}" ng-click="w1Changed()">
+          <i class="icon {{w1_class()}} "></i>
+          My Wallets
+       </a>
+           <a class="tab-item {{c1icontext()}}" ng-click="c1Changed()">
+          <i class="icon  {{c1_class()}}"></i>
+          My Charities
+        </a><a class="tab-item {{pro1icontext()}}" ng-click="pro1Changed()" >
+          <i class="icon {{pro1_class()}}"></i>
+          My Promotions
+        </a>
+        <a class="tab-item {{s1icontext()}} " ng-click="s1Changed()" >
+          <i class="icon  {{s1_class()}}"></i>
+          Stores
+        </a>
+        <a class="tab-item {{m1icontext()}}"  ng-click="m1Changed()" >
+          <i class="icon  {{m1_class()}}" ></i>
+          More
+        </a>
+   </div>
+</ion-view>

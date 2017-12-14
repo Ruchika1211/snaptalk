@@ -1,0 +1,98 @@
+@font-face{
+    font-family:'WorkSansBlack';
+    src: url('../fonts/Work_Sans/WorkSans-Black.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansBold';
+    src: url('../fonts/Work_Sans/WorkSans-Bold.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansExtraBold';
+    src: url('../fonts/Work_Sans/WorkSans-ExtraBold.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansExtraLight';
+    src: url('../fonts/Work_Sans/WorkSans-ExtraLight.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansLight';
+    src: url('../fonts/Work_Sans/WorkSans-Light.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansMedium';
+    src: url('../fonts/Work_Sans/WorkSans-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansRegular';
+    src: url('../fonts/Work_Sans/WorkSans-Regular.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansSemiBold';
+    src: url('../fonts/Work_Sans/WorkSans-SemiBold.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face{
+    font-family:'WorkSansThin';
+    src: url('../fonts/Work_Sans/WorkSansThin.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.WorkSansThin{
+	 font-family:'WorkSansThin';
+}
+
+.WorkSansSemiBold{
+	 font-family:'WorkSansSemiBold';
+}
+
+.WorkSansRegular{
+	 font-family:'WorkSansRegular';
+}
+
+.WorkSansMedium{
+	 font-family:'WorkSansMedium';
+}
+
+.WorkSansLight{
+	 font-family:'WorkSansLight';
+}
+
+.WorkSansExtraLight{
+	 font-family:'WorkSansExtraLight';
+}
+
+.WorkSansExtraBold{
+	 font-family:'WorkSansExtraBold';
+}
+
+.WorkSansBold{
+	 font-family:'WorkSansBold';
+}
+
+.WorkSansBlack{
+	 font-family:'WorkSansBlack';
+}

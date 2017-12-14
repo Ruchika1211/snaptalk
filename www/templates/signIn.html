@@ -1,0 +1,73 @@
+<ion-view title="Login" hide-nav-bar="true" class="loopbackground_new" hide-back-button="true">
+<ion-content class="signinpadding" overflow-scroll="false">
+	    <div class="list">
+	      <div class="logo"></div>
+	      <!-- <div class="sublogo">Charity  & Loyalty Program</div> -->
+	    </div>
+	    <div class="WorkSansLight" style="color: #002f60;margin-top: 18%;font-size: 20px;"> Sign in to continue</div>
+	   <form ng-submit="doLogin()" class="ng-pristine ng-valid" style="padding: 8% 0%;" name="myForm" novalidate>
+	      <div class="list">
+	        
+	        <label class="item item-input signForm" >
+	         <input type="email" ng-model="loginData.email" class="ng-pristine ng-untouched ng-valid" placeholder="Email" required>
+	        </label>
+	        <label class="item item-input signForm" >
+	          
+	          <input type="password"  ng-model="loginData.password"  class="ng-pristine ng-untouched ng-valid"  placeholder="****" required>
+	        </label>
+	           <a  class="WorkSansLight" style="float:right;color: #002f60;font-weight: lighter;text-decoration:none" href="#/forgetpasswrd">Forgot Password?</a>
+	          <button class="button button-small signUpButton WorkSansLight" type="submit" ng-disabled="myForm.$invalid">Sign in</button>
+	      
+	      </div>
+	   </form> 
+	        <div class="signUpContainer" >
+		      <div class="signUpCircle">
+		        <span style="position: relative;font-size: 80%;color: #878787">or
+		        </span>
+		      </div>
+		    </div>
+		   <!--  <div class="signUpContainer" style="visibility: hidden">
+		      <div class="signUpCircle">
+		        <span style="position: relative;font-size: 80%;color: #878787">or
+		        </span>
+		      </div>
+		    </div> -->
+		    <div class="row" style="padding: 0px;margin-bottom: 8%;">
+		      <div class="col col-50 fbimg" ng-click="facebookLogin()">
+		      </div>
+		      <div class="col col-50 googleimg" ng-click="googleLogin()">
+		      </div>
+		    </div>
+		    <div class="signUpContainer" style="visibility: hidden">
+		      <div class="signUpCircle">
+		        <span style="position: relative;font-size: 80%;color: #878787">or
+		        </span>
+		      </div>
+		    </div>
+		   
+		    <div class="WorkSansLight">
+		      <span style="color:#92a0a0">Don't have an account?
+		      </span>
+		      <a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now
+		      </a>
+		    </div>
+	     <!-- <div style="position: relative;height: 100%;">
+		  <div class="WorkSansLight" style="top: 30%;position: absolute;padding-left: 10%;"> 
+		  	<span style="color:#92a0a0">Don't have an account? </span><a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now</a>
+		  </div>
+		</div> -->
+	  <!--  <div class="signUpContainer">
+		   <div class="signUpCircle">
+				<span style="position: relative;font-size: 80%;color: #878787">or</span>
+		   </div>
+	  </div>
+	  <div class="row" style="padding: 0px;margin-bottom: 8%">
+		  <div class="col col-50 fbimg"></div>
+		  <div class="col col-50 googleimg"></div>
+	  </div> -->
+	 <!--  <div style="bottom: 6.5%;position: absolute"> <span style="color:#92a0a0">Don't have an account? </span><a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now</a></div> -->
+  <!--  <div style="bottom: 6.5%;position: absolute;padding-left: 10%;"> <span style="color:#92a0a0">Don't have an account? </span><a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now</a></div>
+</ion-content> -->
+<!-- <div style="bottom: 6.5%;position: absolute;padding-left: 10%;"> <span style="color:#92a0a0">Don't have an account? </span><a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now</a></div> -->
+</ion-content>
+</ion-view>

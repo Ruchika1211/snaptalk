@@ -1,0 +1,112 @@
+<!-- <ion-view title="Wallet" hide-back-button="true">
+  
+  <ion-content  padding="false" class="has-header has-tabs"> 
+   	<div class="row walletcircle" >
+	  <div class="col circle-content" style="padding:20px">
+	  	  <div class="circle" style="color:#ffc267" >
+	  	  	<img src="img/A1" style="width:50px;height:50px" />
+          </div>
+          <p  style="color:#656668;font-size: 12px" class="WorkSansLight">Points Balance $285
+          </p>
+	  </div>
+	  <div class="col circle-content" style="padding:20px">
+	  	  <div class="circle" style="color:#ffc267" >
+	  	  	<img src="img/A1" style="width:50px;height:50px" />
+          </div>
+          <p  style="color:#656668;font-size: 12px" class="WorkSansLight">Loyality # 350
+          </p>
+	  </div>
+	</div>
+	<div style="height: 120px;padding: 20px;">
+		<button class="button button-full button-wallet" style="margin-bottom: 12px;">
+		  Add Money to Wallet
+		</button>
+		<button class="button button-full button-wallet">
+		  Make Donation
+		</button>
+     </div>
+    <div style="background-color: #e8ebf1;">
+	    <div class="card" style="margin-bottom: 3%;box-shadow: 5px 5px 25px 5px #e8ebf1;">
+			  <div class="item item-text-wrap" style="background-color: green;color: white;height: 120px;">
+			    This is a basic Card which contains an item that has wrapping text.
+			  </div>
+	    </div>
+	    <div class="list card" style="margin: 0px 10px;margin-bottom: 3%;">
+		  <div class="item item-avatar">
+		    <img src="img/A1">
+		    <h2>Store Name</h2>
+		    <p>Address line,Street,State,City,Zip</p>
+		  </div>
+		</div>
+		<div class="list card" style="margin: 0px 10px;margin-bottom: 3%;">
+		  <div class="item item-avatar">
+		    <img src="img/A1">
+		    <h2>Store Name</h2>
+		    <p>Address line,Street,State,City,Zip</p>
+		  </div>
+		</div>
+		
+    </div>
+  </ion-content> -->
+ <!--  <div class="tabs tabs-icon-only">
+	  <a class="tab-item mywallete">
+	   
+	  </a>
+	  <a class="tab-item mywallete" >
+	   
+	  </a>
+	  <a class="tab-item mywallete">
+	   
+	  </a>
+	   <a class="tab-item mywallete">
+	   
+	  </a>
+	  <a class="tab-item mywallete">
+	   
+	  </a>
+	 
+   </div>
+
+</ion-view> -->
+<ion-view view-title=" My Wallet" hide-back-button="true">
+  <ion-content class="has-header has-tabs">
+     <div ng-repeat="wallet in mywallets track by $index">
+      <div class="row"  ng-if="$even" style="height:255px;margin-top: 3%;padding:0px !important">
+        <div class=" col-50 promotion_bckgrd"  ng-style="{'background-image':'url({{mywallets[$index].offer_image}})'}" ng-click="promotionmodal(mywallets[$index])">
+          
+        </div>
+      
+        <div class="col-50 promotion_bckgrd" style="background-image: url({{mywallets[$index+1].offer_image}});" ng-click="promotionmodal(mywallets[$index+1])">
+         
+        </div>
+        
+      </div>
+     </div>
+     
+    
+    
+
+  </ion-content>
+   <div class="tabs tabs-icon-top" style="background-color:white;box-shadow: 0 -5px 5px -5px #797979;border-top:1px solid #797979;background-image:none !important;opacity:1.1">
+  
+       <a class="tab-item {{w1icontext()}}" ng-click="w1Changed()">
+          <i class="icon {{w1_class()}} "></i>
+          My Wallets
+       </a>
+           <a class="tab-item {{c1icontext()}}" ng-click="c1Changed()">
+          <i class="icon  {{c1_class()}}"></i>
+          My Charities
+        </a><a class="tab-item {{pro1icontext()}}" ng-click="pro1Changed()" >
+          <i class="icon {{pro1_class()}}"></i>
+          My Promotions
+        </a>
+        <a class="tab-item {{s1icontext()}} " ng-click="s1Changed()" >
+          <i class="icon  {{s1_class()}}"></i>
+          Stores
+        </a>
+        <a class="tab-item {{m1icontext()}}"  ng-click="m1Changed()" >
+          <i class="icon  {{m1_class()}}" ></i>
+          More
+        </a>
+   </div>
+</ion-view>

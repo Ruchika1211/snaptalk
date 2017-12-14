@@ -1,0 +1,8 @@
+{
+  "name": "Snaptalk",
+  "app_id": "",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic1"
+}

@@ -1,0 +1,40 @@
+<ion-view view-title="Stores" hide-back-button="true">
+  <ion-content class="has-header has-tabs">
+   <div class="list card boxshadow" ng-repeat="store in stores track by $index" style=" border-radius: 5px;">
+
+		  <div class="item item-avatar">
+		    <img src="img/storep.png" class="avatarchange">
+		    <h2 style="color: #002758;font-family: 'WorkSansLight';font-size: 16px;margin-bottom: 0px;"> {{store.store_name}}</h2>
+		    <p style="color: #797979;font-family: 'WorkSansLight';text-transform: capitalize;font-size: 12px;word-break: break-all;white-space: normal">{{store.address}},{{store.city}},{{store.country}},{{store.province}}{{store.postalcode}}.</p>
+		  </div>
+
+		  
+
+    </div>
+    <!--  <div ng-repeat="promo in promobills track by $index">
+     </div> -->
+  </ion-content>
+ <div class="tabs tabs-icon-top" style="background-color:white;box-shadow: 0 -5px 5px -5px #797979;border-top:1px solid #797979;background-image:none !important;opacity:1.1">
+
+   <a class="tab-item {{w1icontext()}}" ng-click="w1Changed()">
+      <i class="icon {{w1_class()}} "></i>
+      My Wallets
+   </a>
+       <a class="tab-item {{c1icontext()}}" ng-click="c1Changed()">
+      <i class="icon  {{c1_class()}}"></i>
+      My Charities
+    </a><a class="tab-item {{pro1icontext()}}" ng-click="pro1Changed()" >
+      <i class="icon {{pro1_class()}}"></i>
+      My Promotions
+    </a>
+    <a class="tab-item {{s1icontext()}} " ng-click="s1Changed()" >
+      <i class="icon  {{s1_class()}}"></i>
+      Stores
+    </a>
+    <a class="tab-item {{m1icontext()}}"  ng-click="m1Changed()" >
+      <i class="icon  {{m1_class()}}" ></i>
+      More
+    </a>
+</div>
+</ion-view>  
+

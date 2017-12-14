@@ -1,0 +1,96 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable myNavbar" >
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <img src="img/1.png" style="width: 40px;height: 40px" menu-toggle="left" ng-click="sidemenuClicked()">
+        <!--      <button class="button button-icon button-clear ion-navicon" >
+</button> -->
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <img ng-src={{myImage}} ng-click="profileClicked()" style="width: 28px;height: 28px;margin-top: 7%;margin-right: 2%;" >
+        <img src="img/p2.png" style="width: 28px;height: 28px;margin-top: 7%;margin-left: 5%;" >
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent">
+    </ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" style="background-color: #152348 !important;">
+    <!--   <ion-header-bar class="bar-stable">
+<div class="list">
+<div class="logo"></div>
+</div>
+</ion-header-bar> -->
+    <ion-content  class="dark">
+     
+      <div class="list" style="margin-bottom:2%">
+        <div class="row" style="position: absolute;top: 2px;z-index: 999;">
+         <div class="cancelmenu col-20" ng-click="sidebarClosed()" on-tap="sidebarClosed()">
+         </div>
+          <div class="col">
+         </div> 
+          <div class=" col-20" >
+          </div>
+        </div>
+        <div class="logo1" style="margin-top:9%">
+        </div>
+
+      </div>
+      <ion-list>
+        <ion-item menu-close href="#" ng-click="profileClicked()" class="item-borderless item-avatar myHeight " style="margin-left: 8%;margin-right: 8%;border-top: 2px solid #0d1a3a;border-bottom: 2px solid #0d1a3a;margin-bottom:3%;min-height: 52px;">
+          <img src="img/defaultpro.jpg" style="min-width:40px;min-height:40px;top: 6px;left:0px;width: 100%;height: 100%;border-radius: 50%;">
+          <h2 style="color:white;padding-left:12%;margin-left:-35px;top: 15px;position: absolute;text-transform: capitalize;" class="WorkSansLight">{{userDetail.firstname}} {{userDetail.lastname}}
+          </h2>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="dashboard()">
+          <img src="img/dashboard.png" class="squareAvatar" >
+          <h2 class="avatartext WorkSansRegular">Dashboard
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="wallet()">
+          <img src="img/wallet.png" class="squareAvatar">
+          <h2 class="avatartext WorkSansRegular">My Wallet
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="charity()">
+          <img src="img/heart.png" class="squareAvatar">
+          <h2  class="avatartext WorkSansRegular">My Charities
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="promotion()">
+          <img src="img/promotion.png" class="squareAvatar">
+          <h2 class="avatartext WorkSansRegular">My Promotions
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="stores()">
+          <img src="img/store.png" class="squareAvatar">
+          <h2 class="avatartext WorkSansRegular">Stores
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="events()">
+          <img src="img/calender.png" class="squareAvatar">
+          <h2 class="avatartext WorkSansRegular">Events
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="profileClicked()">
+          <img src="img/5.png" class="squareAvatar">
+          <h2 class="avatartext WorkSansRegular">My Profile
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="transHistory()">
+          <img src="img/hamburger.png" class="squareAvatar" style="top:8px">
+          <h2 class="avatartext WorkSansRegular" >Transaction History
+          </h2>
+        </ion-item>
+        <ion-item menu-close href="#" class="item-borderless no-padding mysidemenuitem" ng-click="logout()">
+          <img src="img/logout.png" class="squareAvatar">
+          <h2 class="avatartext WorkSansRegular">Logout
+          </h2>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,320 @@
+/* Empty. Add your own CSS if you like */
+.loopbackground_new{
+	background-color: #ecfafb;
+}
+.signinpadding .scroll{
+  height:100% !important;
+}
+
+.header-item{
+    color: white !important;
+    font-family:'WorkSansRegular' !important;
+    text-align: center !important;
+}
+
+.popupchange
+{
+    background-color:  #152348 !important;
+    color:white !important;
+}
+
+.signuppadding{
+	padding: 18% 10%;
+}
+.signinpadding{
+    padding: 18% 10%;
+}
+.myNavbar{
+    background-color: #152348 !important;
+}
+
+.logo{
+	height:70px;
+    background: url(../img/snaptalk.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.logo1{
+    height:70px;
+    background: url(../img/21.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+.settingmenu{
+    
+    background: url(../img/22.png);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center  ;
+    float:right;
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 15px;
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+   padding: 0px;
+}
+.cancelmenu{
+    background: url(../img/23.png);
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    /* float: left; */
+    /* position: absolute; */
+    width: 20px;
+    height: 15px;
+    /* z-index: 999; */
+    /* margin-top: 8px; */
+    /* margin-left: 12px; */
+     padding: 0px;
+     height: 40px;
+    z-index: 999;
+
+}
+
+.sublogo{
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 13px;
+	margin-top: -6px;
+	color:#002c65;
+	font-weight: lighter;
+}
+
+.signForm
+{
+	border-radius: 500px;
+    border: none;
+    margin-bottom: 10%;
+    padding: 0px 0px 0px 30px;
+}
+
+.signUpButton
+{
+	background-color: #ffca4c;
+    min-width: 40%;
+    border-radius: 500px;
+    color: white
+}
+
+.signUpContainer{
+	width: 100%;
+height: 1px;
+background-color: #eaeaea;
+position: relative;
+margin-bottom: 8%
+}
+
+.signUpCircle{
+	display: inline-block;
+vertical-align: middle;
+width: 25px;
+height: 25px;
+background-color: #eaeaea;
+border: solid 1px #eaeaea;
+border-radius: 50%;
+position: absolute;
+top: -11px;
+left: calc(48% - 5px);
+text-align: center;
+}
+
+.fbimg{
+    height:50px;
+    background: url(../img/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -5px;
+    padding-left: 0px
+}
+
+.googleimg{
+	height:50px;
+    background: url(../img/google.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 5%;
+    padding-right: 0px
+
+}
+
+.menulogo{
+ /*   height:50px;*/
+ height: 100%;
+    background: url(../img/Menuwithoutlogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.squareAvatar{
+    max-width: 25px;
+max-height: 25px;
+left: 25px;
+top: 5px;
+position: absolute;
+}
+.myHeight a{
+    min-height: 52px !important;
+}
+
+.mysidemenuitem{
+
+    padding: 3px 49px 10px 0px;
+}
+.avatartext{
+    padding-left: 30%;
+    
+    color:#7e8ea5;
+    top:7px;
+    position: absolute;
+    font-size: 15px !important;
+    font-weight: normal !important; 
+}
+/*.menuColor{
+    background-color: #152348;
+}*/
+.item .item-content
+{
+    background-color: transparent !important;
+}
+
+.dark {
+  background-color: #152348 !important;
+  color: #ffffff;
+}
+.dark .scroll-content {
+  background-color: #152348 !important;
+}
+.dark .item {
+  background-color: #152348;
+}
+/*.dark .item:last-child {
+  border-bottom: 1px solid #333333;
+}*/
+.dark .item.current {
+  background-color: #152348 !important;
+ 
+}
+
+.centerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ .circular {
+      width: 80px;
+      height: 80px;
+   }
+.outerV33Percent {
+  height: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outerV55Percent {
+  height: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+    width:100%;
+}
+.circle-content {
+    width:33%;
+    text-align:center;
+    float:left;
+}
+.circle {
+   width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle-content p {
+    font-size:16px;
+    color:#666;
+}
+.mywallet{
+    height:100px;
+    background: url(../img/wallet);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+
+    } 
+.mycharity{
+    height:100px;
+    background: url(../img/charities);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+
+} 
+.mypromotion{
+    height:100px;
+    background: url(../img/promotion);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+
+} 
+.myevent{
+    height:100px;
+    background: url(../img/event);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+
+}
+.mystores{
+height:100px;
+    background: url(../img/stores);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+
+} 
+.mypaymenthistory{
+ height:100px;
+    background: url(../img/tra.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center       
+
+}
+
+.popupbutton{
+    text-align: center;
+}
+/*.dark .item.current p, .dark .item.current h3 {
+  opacity: .7;
+}*/
+/*.dark h2,
+.dark h3,
+.dark p,
+.dark a {
+  color: #F0F1F1;
+}*/
+
+/*.dark-head {
+  text-decoration: none;
+}*/
+

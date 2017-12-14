@@ -1,0 +1,64 @@
+["ok","787438483253655",{"member":[{"sid":"Wyp668ATPKy7R910","firstname":"Pratik","lastname":"Kadam","email":"Pratik@infiny.in","address":"","city":"","province":"OR","country":"US","postalcode":"","homephone":"11155599999","workphone":null,"points":"0","points_intotal":null,"created":"2016-10-18 02:34:48"}]},0]
+
+
+
+
+
+
+mobile_getbills
+[
+  "ok",
+  [
+    {
+      "bill_id": "2240310",
+      "total": "30.00",
+      "receipt_id": "110285986",
+      "store_id": "1793",
+      "local_tm": "2015-11-11 09:36:05",
+      "receipt": "WENDER & ROBERTS WPF\n        1262 W. Paces Ferry Rd.\n           Atlanta, GA  30327\n              404-237-7551\n\nReceipt#   :110285986\nPrint Date :11/11/2015 9:36:05 AM\nSale Date  :11/11/2015 9:35:54 AM\nCashier    :TM\nStation    :RG1\n\nQTY PRICE     DESC           EXTPRICE     \n=== ========= ============== =============\n  1     15.00 RX XXXXXXXXXXX     15.00   ~\n  1     15.00 RX XXXXXXXXXXX     15.00   ~\n\n           Sub Total            $30.00\n           Tax                   $0.00\n           Total                $30.00\n\nCredit Card                     $30.00\n==========================================\n\n              THANK YOU !\nSAVE THIS RECEIPT FOR REFUNDS/EXCHANGES.\nHOLIDAY AND GIFT ITEMS-ALL SALES FINAL.\n      RX ITEMS ARE NOT RETURNABLE.\n        NO RETURNS AFTER 30 DAYS.\n****************************************\n  WE PROCESS AND PRINT YOUR PICTURES!\nBRING YOUR HOLIDAY AND VACATION MEMORIES\n                TO US!!\n****************************************\n\nCredit Card #     : XXXXXXXXXXX6016\nCard Name         : American Express\nAuth #  : 587152\nAmount  :              $30.00\nBalance :               $0.00\n\nSign :______________________________\n\n~ Indicates Qualified Healthcare Products   QHP Total: $30.00"
+    },
+    {
+      "bill_id": "2239258",
+      "total": "3.64",
+      "receipt_id": "310310155",
+      "store_id": "1793",
+      "local_tm": "2015-11-11 09:33:59",
+      "receipt": "WENDER & ROBERTS WPF\n        1262 W. Paces Ferry Rd.\n           Atlanta, GA  30327\n              404-237-7551\n\nReceipt#   :310310155\nPrint Date :11/11/2015 9:33:59 AM\nSale Date  :11/11/2015 9:33:59 AM\nCashier    :40\nStation    :RG3\n\nQTY PRICE     DESC           EXTPRICE     \n=== ========= ============== =============\n  1      3.50 CINNAMON ALTIO      3.50T  \n\n           Sub Total             $3.50\n           Tax                   $0.14\n           Total                 $3.64\n\nCredit Card                      $3.64\n==========================================\n\n              THANK YOU !\nSAVE THIS RECEIPT FOR REFUNDS/EXCHANGES.\nHOLIDAY AND GIFT ITEMS-ALL SALES FINAL.\n      RX ITEMS ARE NOT RETURNABLE.\n        NO RETURNS AFTER 30 DAYS.\n****************************************\n  WE PROCESS AND PRINT YOUR PICTURES!\nBRING YOUR HOLIDAY AND VACATION MEMORIES\n                TO US!!\n****************************************\n\nCredit Card #     : XXXXXXXXXXX7000\nCard Name         : American Express\nAuth #  : 500388\nAmount  :               $3.64\nBalance :               $0.00\n\nSign :______________________________\n\n~ Indicates Qualified Healthcare Products   QHP Total: $0.00"
+    }
+  ]
+]
+
+
+
+
+
+
+
+[
+  "ok",
+  [
+    [
+      {
+        "type": "promotion",
+        "promo_id": "1",
+        "promotion": "Testing",
+        "frequency": "every visit",
+        "expired": 0,
+        "valid_to": "2018-06-20"
+      },
+      {
+        "type": "offer",
+        "offer_id": "1",
+        "upc": "3",
+        "showupc": "0",
+        "offer_image": "http://giantcommunications.ca/snapretail/images/promotions/nexium-2017-06-19_11-54.jpg",
+        "expired": "0",
+        "valid_to": "2018-06-30",
+        "link": null
+      }
+    ]
+  ]
+]
+
+
+WENDER & ROBERTS WPF, 1262 W. Paces Ferry Rd., Atlanta, GA 30327, 404-237-7551,,Receipt# :110285986,Print Date :11/11/2015 9:36:05 AM,Sale Date :11/11/2015 9:35:54 AM,Cashier :TM,Station :RG1,,QTY PRICE DESC EXTPRICE ,=== ========= ============== =============, 1 15.00 RX XXXXXXXXXXX 15.00 ~, 1 15.00 RX XXXXXXXXXXX 15.00 ~,, Sub Total $30.00, Tax $0.00, Total $30.00,,Credit Card $30.00,==========================================,, THANK YOU !,SAVE THIS RECEIPT FOR REFUNDS/EXCHANGES.,HOLIDAY AND GIFT ITEMS-ALL SALES FINAL., RX ITEMS ARE NOT RETURNABLE., NO RETURNS AFTER 30 DAYS.,****************************************, WE PROCESS AND PRINT YOUR PICTURES!,BRING YOUR HOLIDAY AND VACATION MEMORIES, TO US!!,****************************************,,Credit Card # : XXXXXXXXXXX6016,Card Name : American Express,Auth # : 587152,Amount : $30.00,Balance : $0.00,,Sign :______________________________,,~ Indicates Qualified Healthcare Products QHP Total: $30.00

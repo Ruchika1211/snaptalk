@@ -1,0 +1,176 @@
+<ion-view view-title="My Profile" hide-back-button="true">
+  <ion-content class="has-header has-tabs">
+   <form ng-submit="doprofileupdate()" class="ng-pristine ng-valid"  name="myForm" novalidate>
+	   <p style="text-align: center;margin-top: 6%;color: #152348;font-family: 'WorkSansLight';font-size:16px;margin-bottom: 0px;">Contact Info</p>
+	   <div style="padding: 0px 10%;text-align:center">
+		    <div class="row" style="padding: 0px;padding-left: 9px;padding-right: 10px;margin-bottom: 6px;padding-top: 10px;">
+	          <div class="list list-inset myprolisting col-50" style="padding: 0px;margin: 0px !important;padding-right: 5px;">
+	           <label class="item item-input profileForm" style="margin-top: 1px;">
+	            <i class="icon userpro placeholder-icon">
+	            </i>
+	            <input type="text" ng-model="loginData.firstname"  placeholder="Firstname" class="ng-pristine ng-untouched ng-valid"  required style="padding-right: 10px">
+	          </label>
+	          </div>
+	          <div class="list list-inset myprolisting col" style="padding: 0px;margin: 0px !important;">
+	           <label class="item item-input profileForm" style="margin-top: 1px;">
+	           
+	            <input type="text" ng-model="loginData.lastname"  placeholder="Lastname" class="ng-pristine ng-untouched ng-valid"  required style="padding-right: 10px">
+	          </label>
+	          </div>
+	        </div>
+		     <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm">
+			    <i class="icon userem placeholder-icon"></i>
+			    <input type="email" ng-model="loginData.email"  placeholder="name@domain.com" class="ng-pristine ng-untouched ng-valid"  required>
+			  </label>
+		    </div>
+		     <!-- <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm">
+			    <i class="icon userloc placeholder-icon"></i>
+			    <input type="text" ng-model="loginData.location"  placeholder="Location" class="ng-pristine ng-untouched ng-valid"  >
+			  </label>
+		    </div> -->
+		    <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm">
+			    <i class="icon userph placeholder-icon"></i>
+			    <input type="number" ng-model="loginData.homephone"  placeholder="Phone" class="ng-pristine ng-untouched ng-valid"  >
+			  </label>
+		    </div>
+		    <div class="list list-inset myprolisting">
+		     <label class="item item-input item-select profileForm">
+		     	<i class="icon userpro placeholder-icon"></i>
+			    <div class="input-label" style="color: #aaa;text-align: left;font-size: 12px;font-family: 'WorkSansLight';">
+			      Gender
+			    </div>
+			    <select ng-model="loginData.gender" style="margin-right: -17px;">
+			      <option value="m" selected>Male</option>
+			      <option  value="f">Female</option>
+			   
+			    </select>
+			  </label>
+			 </div>
+
+		   
+			 <div class="row" style="padding: 0px;padding-left: 9px;padding-right: 10px;">
+				 <div class="list list-inset myprolisting col-60" style="padding: 0px;margin: 0px !important;margin-bottom: 10px !important;padding-right: 5px;">
+				     <label class="item item-input item-select profileForm" style="margin: 0px !important;">
+				     	<i class="icon userbd placeholder-icon"></i>
+					    <div class="input-label" style="color: #aaa;text-align: left;font-size: 12px;font-family: 'WorkSansLight';padding-right: 0px;">
+					      Birthday
+					    </div>
+					    <select ng-model="loginData.dob"  style="position: static;padding: 0px 5px 0px 0px;text-transform: none !important"   ng-options="i.date as (i.date + i.prefix) for i in birthday">
+                           <!--   <option></option> -->
+	                         <!--  <option value="{{day.date}}" ng-repeat="day in birthday" >{{day.date}}{{day.prefix}}
+                              </option> -->
+		                </select>
+					  </label>
+				 </div>
+				
+   
+				 <div class="list list-inset myprolisting col" style="padding: 0px;margin: 0px !important;">
+				     <label class="item item-input item-select profileForm" style="margin: 0px !important;padding-left: 12px !important;">
+				      
+					   <div style="padding-top: 15px;padding-bottom: 15px;">
+					     <select ng-model="loginData.mob" class="dropArr" style="padding-left: 0px;padding-right: 33px;max-width: 100%;">
+				            <option value="{{month.order}}" ng-repeat="month in monthname" >{{month.month_name}}
+                            </option>
+                         </select>
+                       </div>
+					  </label>
+				 </div>
+			</div>
+			 <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm">
+			    <i class="icon userloc placeholder-icon"></i>
+			    <input type="text" ng-model="loginData.address"  placeholder="Address" class="ng-pristine ng-untouched ng-valid"  >
+			  </label>
+		    </div>
+		     <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm">
+			    <i class="icon userloc placeholder-icon"></i>
+			    <input type="text" ng-model="loginData.city"  placeholder="City" class="ng-pristine ng-untouched ng-valid"  >
+			  </label>
+		    </div>
+		   
+		     <div class="list list-inset myprolisting">
+		     <label class="item item-input item-select profileForm">
+		     	<i class="icon userloc placeholder-icon"></i>
+			    <div class="input-label" style="color: #aaa;text-align: left;font-size: 12px;font-family: 'WorkSansLight';padding-right: 0px;width:15%">
+			      State
+			    </div>
+			    <select ng-model="loginData.province" style="margin-right: -17px;max-width: 69%;padding-left: 0px;text-transform: none !important">
+			      <option value="default" selected="selected">Select a State</option>
+			      <option value="{{state.abbreviation}}" ng-repeat="state in state_name">{{state.name}}</option>
+			   </select>
+			  </label>
+			 </div>
+			  <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm" style="background-color: #fff;">
+			    <i class="icon userloc placeholder-icon"></i>
+			    <input type="text" ng-model="loginData.country"  placeholder="Country" disabled="true"  class="ng-pristine ng-untouched ng-valid"  style="background-color: #fff;">
+			  </label>
+		    </div>
+		  
+		    
+		     <div class="list list-inset myprolisting">
+			  <label class="item item-input profileForm">
+			    <i class="icon userloc placeholder-icon"></i>
+			    <input type="number" ng-model="loginData.postalcode"  placeholder="Zipcode" class="ng-pristine ng-untouched ng-valid"  >
+			  </label>
+		    </div>
+		    <button   type="submit" class="button buttonUpdate "  ng-disabled="myForm.$invalid">Update Info</button>
+		    <p style="border-top: 1px solid #ddd;"></p>
+		    
+		</div>
+    </form>
+	<!-- <div class="row" style="padding: 5% 10%;color:#4f5150;font-family: 'WorkSansLight'">
+		<div  class="col col-20 checkBox"></div><div class="col">I wish to make donation automatically</div>
+		
+	</div> -->
+	<div style="padding: 0px 10%;text-align:center">
+	<form ng-submit="changepass()" class="ng-pristine ng-valid"  name="myPass" novalidate>
+		<!-- <p style="border-top: 1px solid #ddd;"></p> -->
+		<p style="text-align: center;margin-top: 6%;color: #152348;font-family: 'WorkSansLight';font-size:16px;">Change Password</p>
+		<div class="list list-inset myprolisting">
+		  <div class="" style="margin-left: 8%;color:#4f5150;font-family: 'WorkSansLight';text-align: left;margin-bottom: 1%;">New Password</div>
+		  <label class="item item-input  profileForm">
+		    <input type="password" ng-model="loginData.newpass" placeholder="New password" class="ng-pristine ng-untouched ng-valid"  required style="color: #4f5150;font-family: 'WorkSansLight';">
+		  </label>
+		</div>
+		<div class="list list-inset myprolisting">
+		  <div class=""  style="margin-left: 8%;color:#4f5150;font-family: 'WorkSansLight';text-align: left;margin-bottom: 1%;" >Repeat Password</div>
+		  <label class="item item-input  profileForm">
+		    
+		   <input type="password" ng-model="loginData.repeatpass"  placeholder="Repeat password" class="ng-pristine ng-untouched ng-valid"  required style="color: #4f5150;font-family: 'WorkSansLight';">
+		  </label>
+		 
+		</div>
+		<button type="submit" class="button buttonUpdate WorkSansLight" style="margin-bottom: 20%;" ng-disabled="myPass.$invalid">Change Now</button>
+	</form>
+	</div>
+    
+
+  </ion-content>
+   <div class="tabs tabs-icon-top" style="background-color:white;box-shadow: 0 -5px 5px -5px #797979;border-top:1px solid #797979;background-image:none !important;opacity:1.1">
+  
+       <a class="tab-item {{w1icontext()}}" ng-click="w1Changed()">
+          <i class="icon {{w1_class()}} "></i>
+          My Wallets
+       </a>
+           <a class="tab-item {{c1icontext()}}" ng-click="c1Changed()">
+          <i class="icon  {{c1_class()}}"></i>
+          My Charities
+        </a><a class="tab-item {{pro1icontext()}}" ng-click="pro1Changed()" >
+          <i class="icon {{pro1_class()}}"></i>
+          My Promotions
+        </a>
+        <a class="tab-item {{s1icontext()}} " ng-click="s1Changed()" >
+          <i class="icon  {{s1_class()}}"></i>
+          Stores
+        </a>
+        <a class="tab-item {{m1icontext()}}"  ng-click="m1Changed()" >
+          <i class="icon  {{m1_class()}}" ></i>
+          More
+        </a>
+   </div>
+</ion-view>

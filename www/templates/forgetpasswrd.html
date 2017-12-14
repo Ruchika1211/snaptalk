@@ -1,0 +1,41 @@
+<ion-view title="Login" hide-nav-bar="true" class="loopbackground_new" hide-back-button="true">
+  <ion-content class="signuppadding" >
+    <div class="list">
+      <div class="logo">
+      </div>
+      <!-- <div class="sublogo">Charity  & Loyalty Program</div> -->
+    </div>
+    <div class="WorkSansLight" style="color: #002f60;margin-top: 18%;font-size: 20px;">Forgot Password
+    </div>
+    <div class="WorkSansLight" style="padding-top: 8%;color:#575958">Please enter the user email address or phone for your account. You will be emailed a new password.
+    </div>
+    <form  class="ng-pristine ng-valid" style="padding: 8% 0%;" name="myForm" novalidate>
+      <div class="list">
+        <label class="item item-input signForm" style="margin-bottom: 0px">
+          <input type="email" ng-model="Newpassword.email" class="ng-pristine ng-untouched ng-valid WorkSansLight" placeholder="Enter your email or phone" required>
+        </label>
+        </div>
+    </form> 
+        <div class="row">
+          <button class="button button-small signUpButton WorkSansLight " style="min-width: 30%;margin-right: 10%;color:white" ng-click="goback()" >Back
+          </button>
+          <button class="button button-small signUpButton WorkSansLight" style="min-width: 60%;color:white" ng-disabled="myForm.$invalid" disabled="disabled" ng-click="passwordReset()">Recover Password
+          </button>
+        </div>
+      </div>
+    </form> 
+    <!--  <div class="signUpContainer">
+<div class="signUpCircle">
+<span style="position: relative;font-size: 80%;color: #878787">or</span>
+</div>
+</div>
+<div class="row" style="padding: 0px;margin-bottom: 8%">
+<div class="col col-50 fbimg"></div>
+<div class="col col-50 googleimg"></div>
+</div> -->
+    <!--  <div style="bottom: 6.5%;position: absolute"> <span style="color:#92a0a0">Don't have an account? </span><a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now</a></div> -->
+  </ion-content>
+  <!-- <div style="bottom: 6.5%;position: absolute;padding-left: 10%;"> <span style="color:#92a0a0">Don't have an account? </span><a href="#/signUp" style="color:#002f60;text-decoration:none"> Sign up now</a></div>
+-->
+</ion-view>
+

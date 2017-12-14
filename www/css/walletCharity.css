@@ -1,0 +1,253 @@
+.dropArr:after{
+    position: absolute;
+    top: 55%;
+    margin-top: -3px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    color: #999;
+    content: "";
+    pointer-events: none;
+
+}
+
+.item-select:after 
+{
+    top: 55%;
+}
+
+.my-charity-popup{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   background: rgba(21, 35, 72,0.9);
+    
+   
+}
+
+.my-charity-popup .popup{
+    width: 85%;
+    /* height: 400px; */
+    border-radius: 5px;
+    background-color: white;
+}
+.my-charity-popup .popup-body{
+        padding: 10px;
+        background-color: white;
+       font-family:'WorkSansExtraLight';
+        color:#002d63;
+       
+}
+
+ .my-charity-popup .mybutton
+ {
+
+    border-radius: 500px;
+    background-color:#ffca4c;
+    min-height: 30px;
+    color: white;
+
+ }
+
+ .my-charity-popup .popup-title{
+ 	background-color: white;
+ 	font-family:'WorkSanRegular';
+ 	color:#002d63;
+
+ }
+ 
+.my-charity-popup .popup-buttons{
+ 
+ 	border-radius:  0px 0px 15px 15px; 
+ 	padding: 0px 90px 10px 90px;
+    min-height: 10px;
+    background-color: white;
+   
+
+ }
+ .my-charity-popup  .popup-head
+ {
+ 	background-color: white;
+  border-radius: 15px 15px 0px 0px; 
+ 	
+
+ }
+
+ .profileForm
+ {
+    border-radius: 500px !important;
+    margin-bottom: 3% !important;
+    padding: 0px 0px 0px 30px !important;
+ }
+
+ .userpro{
+    background: url(../img/proprofActive.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    margin-right: 3%;
+ }
+
+  .userem{
+    background: url(../img/icon_pro_32_email.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    margin-right: 3%;
+ }
+
+  .userloc{
+    background: url(../img/icon_pro_32_location.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    margin-right: 3%;
+ }
+  .userph{
+    background: url(../img/icons8-Cell_Phone_Filled-50.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    margin-right: 3%;
+ }
+  .userbd{
+    background: url(../img/icons8-Calendar_Filled-50.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    margin-right: 3%;
+ }
+
+  .donat{
+    background: url(../img/donate1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+       
+    
+    /* padding: 14px; */
+    /* padding-top: 30px; */
+  
+    height: 25px;
+  
+    /* margin-right: 3%; */
+ }
+  .usercode{
+    background: url(../img/icons8-Region_Code_Filled-50.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25px;
+    margin-right: 3%;
+ }
+ .myprolisting
+ {
+    margin: 0px 10px !important;
+    text-transform: capitalize;
+ }
+
+ .profileForm input[type="text"],.profileForm input[type="email"],select,.profileForm input[type="number"]
+ {
+    color: #4f5150;
+    font-family: 'WorkSansLight';
+    font-size: 12px !important;
+    text-transform: capitalize;
+ }
+.buttonUpdate{
+
+    min-width: 43px;
+    min-height: 30px;
+    line-height: 30px;
+    border-radius: 500px;
+    background-color: #ffca4c;
+    color: white;
+    margin-bottom: 7%;
+    margin-top: 1%;
+    font-family: 'WorkSansLight';
+    font-size: 12px;
+    padding: 0px 7%;
+}
+
+.checkBox{
+
+    background: url(../img/checkbox.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 30px;
+    margin-top: 2%;
+
+}
+
+/*.my-signup-popup{
+
+}*/
+
+.my-signup-popup{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   background: rgba(21, 35, 72,0.9);
+    
+   
+}
+
+.my-signup-popup .popup{
+    width: 85%;
+    /* height: 400px; */
+    border-radius: 5px;
+    background-color: white;
+}
+.my-signup-popup .popup-body{
+        padding: 10px;
+        background-color: white;
+       font-family:'WorkSansExtraLight';
+        color:#002d63;
+       
+}
+
+ .my-signup-popup .mybutton
+ {
+
+    border-radius: 500px;
+    background-color:#ffca4c;
+    min-height: 30px;
+    color: white;
+
+ }
+
+ .my-signup-popup .popup-title{
+    background-color: white;
+    font-family:'WorkSanRegular';
+    color:#002d63;
+
+ }
+ 
+.my-signup-popup .popup-buttons{
+ 
+    border-radius:  0px 0px 15px 15px; 
+    padding: 0px 90px 10px 90px;
+    min-height: 10px;
+    background-color: white;
+   
+
+ }
+ .my-signup-popup  .popup-head
+ {
+    background-color: white;
+  border-radius: 15px 15px 0px 0px; 
+    
+
+ }
+
+
+
